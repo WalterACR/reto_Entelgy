@@ -26,6 +26,7 @@ public class ManageMessageImpl implements ManageMessage {
 	public ArrayList<PostMessage> modifyMessage() {
 		ArrayList<PostMessage> answerModified = new ArrayList<PostMessage>();
 		GetMessage[] messages = getMessage();
+		
 		for (GetMessage getMessage : messages) {
 			PostMessage tempPostMessage = new PostMessage();
 			tempPostMessage.setPostId(getMessage.getPostId());
